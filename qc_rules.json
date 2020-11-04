@@ -1,0 +1,15 @@
+{
+	"sameCountGroups": [
+		{
+			"groupName" : "Demographics",
+			"subGroupNames" : ["Age_Range", "Gender", "Ethnicity", "Race"],
+			"subGroupNamesColumn" : "covariate_name",
+			"countColumn" : "EncounterCount"
+		}
+	],
+	"nonNegativeColumns" : [
+	],
+	"nullAllowedColumns" : [
+	]
+
+}

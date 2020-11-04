@@ -29,7 +29,13 @@ def parse_web():
 
     url = request.args.get('url', type=str)
 
-    return find_fac_entities(render_html(url))
+    resp = dict()
+
+    resp['status'] = 102
+    resp['message'] = 'model is being trained'
+
+    return resp
+    # return find_fac_entities(render_html(url))
 
 
 @app.route('/pdf')
@@ -39,7 +45,13 @@ def parse_pdf():
 
     url = request.args.get('url', type=str)
 
-    return find_fac_entities(render_pdf(url))
+    resp = dict()
+
+    resp['status'] = 102
+    resp['message'] = 'model is being trained'
+
+    return resp
+    # return find_fac_entities(render_pdf(url))
 
 # @app.route('/addCustomer')
 # def add_customer():
